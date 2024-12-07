@@ -1,5 +1,5 @@
-[![Test web-app on Pull Request](https://github.com/software-students-fall2024/5-final-y2k/blob/main/.github/workflows/testing.yml/badge.svg)](https://github.com/software-students-fall2024/5-final-y2k/blob/main/.github/workflows/testing.yml)
-[![Publish Docker Image and Deploy to DigitalOcean](https://github.com/software-students-fall2024/5-final-y2k/blob/main/.github/workflows/publishing.yml/badge.svg)](https://github.com/software-students-fall2024/5-final-y2k/blob/main/.github/workflows/publishing.yml)
+[![Test web-app on Pull Request](https://github.com/software-students-fall2024/5-final-y2k/actions/workflows/testing.yml/badge.svg)](https://github.com/software-students-fall2024/5-final-y2k/blob/main/.github/workflows/testing.yml)
+[![Publish Docker Image and Deploy to DigitalOcean](https://github.com/software-students-fall2024/5-final-y2k/actions/workflows/publishing.yml/badge.svg)](https://github.com/software-students-fall2024/5-final-y2k/blob/main/.github/workflows/publishing.yml)
 
 # Final Project
 
