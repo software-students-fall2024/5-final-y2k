@@ -1,5 +1,5 @@
-[![Run WebApp Test](https://github.com/software-students-fall2024/5-final-y2k/blob/main/.github/workflows/testing.yml/badge.svg)](https://github.com/software-students-fall2024/5-final-y2k/blob/main/.github/workflows/testing.yml)
- [![Run MongoDB Tests](https://github.com/software-students-fall2024/5-final-y2k/blob/main/.github/workflows/publishing.yml/badge.svg)](https://github.com/software-students-fall2024/5-final-y2k/blob/main/.github/workflows/publishing.yml) 
+[![Test web-app on Pull Request](https://github.com/software-students-fall2024/5-final-y2k/blob/main/.github/workflows/testing.yml/badge.svg)](https://github.com/software-students-fall2024/5-final-y2k/blob/main/.github/workflows/testing.yml)
+[![Publish Docker Image and Deploy to DigitalOcean](https://github.com/software-students-fall2024/5-final-y2k/blob/main/.github/workflows/publishing.yml/badge.svg)](https://github.com/software-students-fall2024/5-final-y2k/blob/main/.github/workflows/publishing.yml)
 
 # Final Project
 
@@ -48,8 +48,8 @@ Record and save your audio files, share them with friends, and get automatic tra
 
 ## Wireframes
 
-The wireframes for this project, designed in Figma, outline the structure and user interface.  
- 
+The wireframes for this project, designed in Figma, outline the structure and user interface.
+
 [**Figma Wireframes**](https://www.figma.com/design/yLFRMQmg38yyakEGCcKE0K/Final-SWE-project?node-id=0-1&t=mGMPcWYwOiU1suvv-1)
 
 ## Setup Instructions
@@ -78,9 +78,10 @@ pipenv install
 ```
 pipenv shell
 ```
-### 5. Build and run docker containers
 
-Create a .env file 
+### 5. Create a .env file
+
+Example of .env file
 
 ```
 MONGODB_USERNAME= abc123
