@@ -165,15 +165,15 @@ def perform_speech_recognition(wav_io):
             print("Audio file opened successfully.")
             audio_data = recognizer.record(source)
             print("Audio data recorded successfully.")
-            transcription = recognizer.recognize_sphinx(audio_data)
+            transcription = recognizer.recognize_google_cloud(audio_data)
             print("Transcription completed successfully:", transcription)
             return transcription
 
     except sr.UnknownValueError:
-        print("CMU Sphinx could not understand the audio.")
+        print("Recognizer could not understand the audio.")
         return None
     except sr.RequestError as e:
-        print(f"CMU Sphinx request failed: {e}")
+        print(f"Recognizer request failed: {e}")
         return None
     except Exception as e:
         print("Error during speech recognition:")

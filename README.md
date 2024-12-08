@@ -79,23 +79,37 @@ pipenv install
 pipenv shell
 ```
 
-### 5. Create a .env file
+### 5. Secure a Google Cloud Service account key.
 
-Example of .env file
+A tutorial for this step can be found [here](https://cloud.google.com/iam/docs/service-accounts-create).
+
+After completing it, you should have a key file in `.json` format. For easiest use, place it at the root of the project.
+
+### 6. Create a .env file
+
+Example of .env file. 
+
+It must include the mongodb user and password, a flask secret, and the path to the api credentials secured in the previous step.
 
 ```
 MONGODB_USERNAME= abc123
 MONGODB_PASSWORD= abc123
 FLASK_SECRET= abc123
+GOOGLE_APPLICATION_CREDENTIALS=path/to/credentials.json
 ```
 
-### 6. Build and run docker containers
+***NOTE***: If the credentials file was placed at the root of the project, it is enough to only include its name in the `.env`.
+
+### 7. Build and run docker containers
 
 ```
+docker compose build
 docker compose up
 ```
 
-### 7. Stop docker containers
+***NOTE***: In order for the database to mount correctly, make sure a `data` folder is created at the root of the project. This can be done with `mkdir data` on Linux/MacOS. This also ensures data persists between sessions.
+
+### 8. Stop docker containers
 
 ```
 docker compose down

@@ -7,10 +7,10 @@ name = "pypi"
 pymongo = "*"
 pydub = "*"
 speechrecognition = "*"
-pocketsphinx = "*"
 flask = "*"
 flask-login = "*"
 python-dotenv = "*"
+google-cloud-speech = "*"
 
 [dev-packages]
 pytest = "*"
