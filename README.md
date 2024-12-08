@@ -98,13 +98,16 @@ FLASK_SECRET= abc123
 GOOGLE_APPLICATION_CREDENTIALS=path/to/credentials.json
 ```
 
-*NOTE*: if the credentials file was placed at the root of the project, it is enough to only include its name in the `.env`.
+***NOTE***: If the credentials file was placed at the root of the project, it is enough to only include its name in the `.env`.
 
 ### 7. Build and run docker containers
 
 ```
+docker compose build
 docker compose up
 ```
+
+***NOTE***: In order for the database to mount correctly, make sure a `data` folder is created at the root of the project. This can be done with `mkdir data` on Linux/MacOS. This also ensures data persists between sessions.
 
 ### 8. Stop docker containers
 
